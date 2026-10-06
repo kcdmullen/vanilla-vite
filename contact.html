@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Acme Services</title>
+</head>
+
+<body>
+  <div id="header"></div>
+  <main class="page-content">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <label>
+        Name
+        <input
+          type="text"
+          name="name"
+          required
+        >
+      </label>
+
+      <label>
+        Email
+        <input
+          type="email"
+          name="email"
+          required
+        >
+      </label>
+
+      <label>
+        Message
+        <textarea
+          name="message"
+          rows="5"
+          required
+        ></textarea>
+      </label>
+
+      <button type="submit">
+        Send Message
+      </button>
+
+      <p
+        id="formMessage"
+        class="form-message"
+        hidden
+      ></p>
+
+    </form>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/pages/contact.js"></script>
+
+</body>
+
+</html>
